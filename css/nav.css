@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(to right, #000724,#00197a);
+    font-family: sans-serif
+}
+header{
+    color: white;
+}
+nav{
+    background-image:linear-gradient(to right, #000724,#00197a);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.logo-brand,.input-icon{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-brand{
+    margin: 1rem 5rem;
+}
+.input-icon{
+    width: 40%;
+    margin: 1.2rem;
+    margin-right: 5rem;
+}
+.comb{
+    margin: auto 20px;
+    display: flex;
+    align-items: center;
+}
+.logo-brand img{
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+@keyframes logo{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+.favo{
+    font-size: 1.2rem;
+    margin: 10px;
+}
+.brand{
+    font-size: 2rem;
+    height: 36px;
+    width: 185px;
+}
+.fa-bell{
+    font-size: 1.8rem;
+    margin: auto 20px;
+    animation: rotate 1s infinite alternate;
+}
+@keyframes rotate {
+    from{transform: rotate(-45deg);}
+    to{transform: rotate(+45deg);}
+   
+}
+.fa-user-circle{
+    font-size: 3rem;
+    margin: auto 20px;
+}
+header .search{
+    width: 19rem;
+    background-color: #2445ca;
+    border-radius: 1.2rem;
+    color: white;
+}
+.search{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header input{
+    margin: auto 5px;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+}
+.fa-search{
+    color: white;
+}
+@media only screen and (max-width: 1200px) {
+    nav{
+        flex-direction: column;
+    }
+    .logo-brand{
+        width: 100vw;
+        justify-content: space-around;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+    .input-icon{
+        display: flex;
+        margin: auto 0px;
+        justify-content: space-around;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+    .search{
+        height: 40px;
+        width:70%;
+    }
+    input{
+        font-size: 0.6rem;
+    }
+    .input-icon i{
+        margin: 5px;
+    }
+    .fa-bell,.fa-user-circle{
+        margin:10px;
+    }
+}
+@media only screen and (max-width:460px){
+    .logo-brand,.favo{
+        margin: 5px 0;
+    }
+    .fa-bell,.fa-user-circle{
+        font-size: 1.6rem;
+    }
+}

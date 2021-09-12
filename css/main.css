@@ -1,0 +1,428 @@
+main{
+    background-image:linear-gradient(to right, #000724,#00197a);
+    color: white;
+    overflow: auto;
+    display: inline-block;
+    width: 66%;
+    height: 82.5vh;
+    margin: 0 auto;
+    margin-top: 5rem;
+    
+}
+.main-section-1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.main-section-1 img{
+    margin: 1.2rem;
+    width: 18rem;
+    height: 18rem;
+}
+
+.latest-release{
+    color: white;
+    width: 100%;
+}
+.release,.artist-names,.latest-english-container{
+    margin: 0 auto;
+    width:95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.latest1{
+    margin: 10px;
+    position: relative;
+    height: 8rem;
+    width: 44%;
+    border: 2px solid transparent;
+}
+.latest1:hover{
+    border: 2px solid white;
+}
+.release img{
+    height: 100%;
+    width: 8rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.info,.info2{
+    position: relative;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 100%;    
+}
+.info .singer{
+    margin-top: 2rem;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+.info2{
+    position: absolute;
+    right: 0%;
+}
+.time{
+    font-size:1rem
+}
+.dropbtn{
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    left:-380%;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    width: 13rem;
+    z-index: 1;
+    background-color: blueviolet;
+    font-size: 1.5rem;
+    display: none;
+}
+.queue{
+    color: blueviolet;
+    background-color: white;
+    left:-200%;
+    width: 11rem;
+    font-size: 1.1rem;
+}
+
+.dropdown-content div{
+    border-bottom: 3px solid white;
+}
+.queue div{
+    border-bottom: 3px solid cyan;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content div:hover {
+    background-color: rgb(17, 17, 102);
+}
+.artist-names{
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+}
+.artist1{
+    margin: 10px 1px;
+    color: white;
+    height: 10rem;
+    width: 9rem;
+    position: relative;
+}
+.artist1 img{
+    height: 75%;
+    width:100%;
+    border-radius: 50%;
+}
+.artist1 h3{
+    text-align: center;
+}
+.artist1 i{
+    display: none;
+}
+.artist1:hover i{
+    display: block;
+}
+.artist1:hover img{
+    opacity: 0.5;
+}
+.popular-artist h1,.latest-english h1,.latest-release h1{
+    margin-left:2rem;
+}
+.category2{
+    width: 100%;
+}
+.cate2-item{
+    position :relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cate2-item .item1{
+    height: 13em;
+    width: 16rem;
+    position: relative;
+    margin: 1rem;
+    overflow: hidden;
+}
+.cate2-item img{
+    height: 100%;
+    width: 100%;
+}
+.cate2-item .item1 div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 1;
+}
+.cate2-item .item1:hover{
+    opacity: 0.5;
+}
+.cate2-item .item1:hover img{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.3);
+    overflow: hidden;
+}
+
+.latest-english-container{
+    width: 95%;
+    
+}
+.latest-english-1{
+    padding: 5px;
+    margin: 0.2rem;
+    width: 10rem;
+    margin-bottom: 10px;
+    /* height: 16rem; */
+}
+.latest-english-1:hover{
+    box-shadow: 0px 0px 10px 2px white;
+}
+.latest-english-1 img{
+    width: 100%;
+    height: 9rem;
+}
+.latest-english-1 h3, .latest-english-1 h5{
+    margin: 0;
+}
+.queue-button{
+    margin-top: 1.2rem;
+    height: auto;
+    width: auto;
+    font-size: 1rem;
+    color: yellow;
+}
+.playlist{
+    position: relative;
+    overflow: auto;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 5rem;
+    width: 28%;
+    color: white;
+    height: 82vh;
+    padding: 8px;
+    background-color:#00197a;
+    /* left: 3%; */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.playlist1{
+    margin-bottom: 2rem;
+    width:95%;
+    display: flex;
+    align-items: center;
+}
+.playlist1 p{
+    margin:0;
+    position: relative;
+}
+
+.playlist .dropdown{
+    position: absolute;
+    color: yellow;
+    right: 3%;
+}
+.playlist1 img{
+    height:5rem;
+    width: 5rem;
+    position: relative;
+    left: 4%;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    height: 4rem;
+    z-index: 2;
+}
+.current-song{
+    display: flex;
+    justify-content: space-around;
+}
+.current-song .div1,.current-song .div3,.current-song .div2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
+.current-song .div2{
+    height: 4rem;
+    flex-direction: column;
+    width: 25%;
+    justify-content: start;
+}
+
+.current-song .div3{
+    height: 4rem;
+    justify-content: space-around;
+}
+
+.current-song .div1 img{
+    height: 100%;
+    width: 4rem;
+}
+.cursor-button{
+    position: relative;
+    width: 6rem;
+    height: 0.3rem;
+    background-color: grey;
+    border-radius: 3px;
+}
+.circle{ 
+    display: inline-block;
+    background-color: rgb(24, 82, 207);
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: -4%;
+    top:-100%
+}
+.controls{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15rem;
+    height: 2.3rem;
+    flex-wrap: wrap;
+}
+.duration{
+    top: -20%;
+    width: 60%;
+    display: inline-block;
+}
+.duration .circle{
+    left:20%;
+}
+.main-section-1 div:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media only screen and (max-width: 1440px){
+    .main-section-1 img{
+        margin: 1rem;
+        width: 10rem;
+        height: 10rem;
+    }
+}
+@media only screen and (max-width: 1180px){
+    .latest1{
+        width: 90%;
+    }
+    .cate2-item .item1 div{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 1200px){
+    main,.playlist{
+        margin-top: 10rem;
+        height: 60vh;
+    }
+
+}
+@media only screen and (max-width: 396px){
+    main,.playlist{
+        margin-top: 13rem;
+    }
+}
+@media only screen and (max-width: 915px){
+    .current-song{
+        justify-content: space-between;
+    }
+    .current-song .div1,.current-song .div3{
+        width: 33%;
+    }
+    .current-song .div2{
+        width: 40%;
+    }
+    .current-song .div1{
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .div1,.div2{
+        width: 40%;
+    }
+    .div10,.div11{
+        display: none;
+    }
+    .current-song .div3,.current-song .div1 i,.duration,.current-song span{
+        display: none;
+    }
+    .current-song .controls{
+        width: 90%;
+        height: 4rem;
+    }
+    .cate2-item .item1{
+        height: 10rem;
+        width: 10rem;
+    }
+    .playlist,main{
+        display: block;
+        width:95%;
+        height: auto;
+        overflow: hidden;
+    }
+    .playlist{
+        left: 0%;
+        margin-top: 1rem;
+    }
+    .playlist1{
+        width: 95%;
+    }
+    .heart-icon{
+        right: 10%;
+    }
+    body{
+        overflow: none;
+    }
+    .latest-release{
+        padding: 0.5rem;
+    }
+}
+@media only screen and (max-width:460px){
+    .latest-english-1{
+        width: 6rem;
+    }
+    .cate2-item .item1 div{
+        font-size: 0.8rem;
+    }
+    .artist1{
+        width: 8rem;
+    }
+    .latest1 img{
+        width: 6rem;
+        height: 6rem;
+    }
+
+}
